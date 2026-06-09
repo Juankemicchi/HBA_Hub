@@ -14,59 +14,60 @@
       min-height: 100vh;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
       text-align: center;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.8rem;
       margin-bottom: 10px;
       background: linear-gradient(90deg, #00ff88, #00b8ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .subtitle {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       color: #aaa;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
     .sports-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 25px;
       margin-top: 40px;
     }
     .sport-card {
       background: rgba(255,255,255,0.08);
-      border-radius: 16px;
-      padding: 30px 20px;
+      border-radius: 20px;
+      padding: 35px 25px;
       transition: all 0.3s;
       border: 1px solid rgba(255,255,255,0.1);
     }
     .sport-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-12px);
       background: rgba(255,255,255,0.15);
       border-color: #00ff88;
     }
     .sport-card h3 {
-      font-size: 1.6rem;
-      margin: 15px 0;
+      font-size: 1.8rem;
+      margin: 15px 0 8px 0;
     }
     .coming-soon {
       color: #ffaa00;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      margin-top: 8px;
     }
     .btn {
       background: #00ff88;
       color: black;
-      padding: 14px 32px;
+      padding: 14px 40px;
       border: none;
       border-radius: 50px;
       font-weight: bold;
       font-size: 1.1rem;
       cursor: pointer;
-      margin-top: 15px;
+      margin-top: 20px;
       transition: 0.3s;
     }
     .btn:hover {
@@ -85,8 +86,8 @@
       <!-- NBA -->
       <div class="sport-card">
         <h2>🏀</h2>
-        <h3>NBA Player Props</h3>
-        <p>Análisis avanzado de puntos, rebotes, asistencias, PRA y más</p>
+        <h3>NBA</h3>
+        <p>Player Props Analyzer</p>
         <a href="https://juankemichi-hba.streamlit.app" target="_blank">
           <button class="btn">Entrar a NBA Analyzer</button>
         </a>
@@ -96,29 +97,32 @@
       <div class="sport-card">
         <h2>⚽</h2>
         <h3>Fútbol</h3>
-        <p>Corners, Goles, Tarjetas, BTTS y más</p>
-        <button class="btn" onclick="alert('🚧 En desarrollo... Pronto disponible')">Entrar a Fútbol</button>
+        <p>Corners • Goles • Tarjetas • BTTS</p>
+        <span class="coming-soon">(En desarrollo)</span>
+        <button class="btn" onclick="alert('🚧 Fútbol Analyzer está en desarrollo')">Entrar a Fútbol</button>
       </div>
 
       <!-- Tenis -->
       <div class="sport-card">
         <h2>🎾</h2>
         <h3>Tenis</h3>
-        <p>Juegos ganados, sets, handicaps y más</p>
-        <button class="btn" onclick="alert('🚧 En desarrollo... Pronto disponible')">Entrar a Tenis</button>
+        <p>Juegos Ganados • Sets • Handicaps</p>
+        <span class="coming-soon">(En desarrollo)</span>
+        <button class="btn" onclick="alert('🚧 Tenis Analyzer está en desarrollo')">Entrar a Tenis</button>
       </div>
 
       <!-- E-Sports -->
       <div class="sport-card">
         <h2>🎮</h2>
         <h3>E-Sports</h3>
-        <p>Análisis de League of Legends, CS2, Valorant, etc.</p>
-        <button class="btn" onclick="alert('🚧 En desarrollo... Pronto disponible')">Entrar a E-Sports</button>
+        <p>League of Legends • CS2 • Valorant</p>
+        <span class="coming-soon">(En desarrollo)</span>
+        <button class="btn" onclick="alert('🚧 E-Sports Analyzer está en desarrollo')">Entrar a E-Sports</button>
       </div>
 
     </div>
 
-    <p style="margin-top: 60px; color: #666;">
+    <p style="margin-top: 80px; color: #555; font-size: 1rem;">
       HBA Hub - Desarrollado con ❤️ por Grok + Juancho
     </p>
   </div>
